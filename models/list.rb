@@ -42,7 +42,7 @@ class List
   def add_items(values)
     values.each do |value|
       normalized_value = normalize(value[0])
-      @items << { value: normalized_value, added_at: Time.now } if email_valid
+      @items << { value: normalized_value, added_at: Time.now }
       set_count_for_today!
     end
   end
